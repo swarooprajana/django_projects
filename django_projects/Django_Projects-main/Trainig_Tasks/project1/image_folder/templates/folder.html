@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>image_folder</title>
+</head>
+<body>
+        <form  method = "POST"  enctype = "multipart/form-data">
+            {% csrf_token %}
+            <input type ="file"  name="image" >
+            <p><input type="submit" size = 10 value="upload"></p>
+        </form>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>read</title>
+</head>
+<body>
+  <form method = "POST">
+      {% csrf_token %}
+      <table border = "2">
+          <tr>
+              <th>id</th>
+              <th>photo</th>
+          </tr>
+            {{ get_image }}
+            {% for i in image %}
+          <tr>
+              <td>{{ i.id }}</td>
+              <td><img src = "{{i.image.url}}"></td>
+              <td><img class="image" src="/home/vasu/Vasu/freshersbatch4/project1/manor-house-2359884__340_ERHcNEj.jpg"></td>
+          </tr>
+             {% endfor %}
+      </table>
+</form>
+</body>
+</html>

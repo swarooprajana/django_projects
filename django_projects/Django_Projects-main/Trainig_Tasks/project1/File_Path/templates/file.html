@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Path</title>
+</head>
+<body>
+     <form method="POST"  enctype="multipart/form-data" >
+         {% csrf_token %}
+         <p>name:<input type="text" size="20" name="name"></p><br>
+         <p><input type="file" name="image"></p>
+         <p><input type="submit" value="upload" ></p>
+     </form>
+
+</body>
+</html>

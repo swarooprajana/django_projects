@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+<form method = "POST">
+    {% csrf_token %}
+    <p>username:<input type = "text" size = 30  name = "username"></p><br>
+    <p>password:<input type = "text" size = 30  name = "password"></p><br>
+    <p>name:<input type = "text" size = 20 name = "name"></p><br>
+    <p>email:<input type = "text" size = 20 name = "email"></p><br>
+    <p>phone:<input type = "text" size = 20  name = "phone"></p><br>
+    <button type="submit">submit</button>
+
+</form>
+</body>
+</html>
